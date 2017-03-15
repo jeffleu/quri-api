@@ -1,0 +1,76 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  background: url('https://cdn2.hubspot.net/hubfs/1598113/shopping-cart-grocery-store-web.jpg');
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.main {
+  margin: 0 auto;
+  height: 300px;
+  width: 600px;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.input-section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-inline {
+  margin: 0 0 8px 0;
+}
+
+.error-message {
+  color: red;
+}
+
+.add-btn {
+  margin-left: 5px;
+}
+
+.add-btn:focus {
+  outline:0;
+}
+
+.buttons {
+  margin: 0 0 10px 0;
+}
+
+.list {
+  width: 50%;
+  overflow-y: auto;
+  border-left: 1px solid white;
+}
+
+.list::-webkit-scrollbar {
+  width: 10px;
+}
+ 
+.list::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 20px;
+}
+
+.list::-webkit-scrollbar-track {
+  background: #ddd;
+  border-radius: 20px;
+}
+
+.upcs {
+  margin: 19px 0 19px -15px;
+  list-style-type: none;
+}
