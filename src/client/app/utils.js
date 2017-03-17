@@ -32,7 +32,7 @@ export const addLeadingZeroes = upc => {
   return zeroes + upc;
 };
 
-export const getCheckDigit = upc => {
+export const addCheckDigit = upc => {
   if (upc.length !== 11) return upc;
   let odd = 0;
   let even = 0;

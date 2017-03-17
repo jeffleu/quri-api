@@ -3,7 +3,7 @@ import {
   upcApiUrl,
   containsAlpha,
   isIncorrectLength,
-  getCheckDigit,
+  addCheckDigit,
   addLeadingZeroes,
   lengthError,
   numericError
@@ -27,7 +27,7 @@ export const validateUPC = (req, res) => {
   };
 
   const lookupWithCheckDigit = () => {
-    const upcWithCheckDigit = { upc: getCheckDigit(upc) };
+    const upcWithCheckDigit = { upc: addCheckDigit(upc) };
     axios.post(upcApiUrl, upcWithCheckDigit)
       .then(result => res.send(Object.assign({}, lengthError, {suggestion: upcWithCheckDigit.upc})))
       .catch(error => res.send(lengthError));
