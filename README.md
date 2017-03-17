@@ -1,6 +1,6 @@
 # UPC entry using Quri API
 This application allows users to bulk upload UPCs using the Quri API.
-[](https://raw.githubusercontent.com/jeffleu/quri-api/master/src/client/images/screenshot.png)
+![](https://raw.githubusercontent.com/jeffleu/quri-api/master/src/client/images/screenshot.png)
 
 ## Requirements
 * [Node.js](https://node.js.org/) v6.x.x
