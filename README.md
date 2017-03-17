@@ -40,12 +40,12 @@ When adding a UPC, there is immediate live feedback that will tell the user if t
 
 If the UPC is all numeric, but length is less than 12, `addLeadingZeroes` function will add the leading zeroes (until the UPC is a length of 12), then check to see if the updated UPC is valid or not (via the [upcitemdb](http://www.upcitemdb.com/) API). If after adding the leading zeroes the UPC is still invalid, it will then take the original UPC, run `addCheckDigit` to add the check digit to the UPC (only if the length is 11), and check its validity against the [upcitemdb](http://www.upcitemdb.com/) API.
 
-If after adding the check digit to the UPC and it's still not a valid UPC, the back end will send back an error message, which will be displayed under the input box.
+If after adding the check digit to the UPC and it's still not valid, the back end will send back an error message, which will be displayed under the input box.
 
 If adding the leading zeroes or the check digit makes the UPC valid, it will send the suggestion back with the error message.
 
 #### Importing the UPC List
-Users are only able to add a UPC to the list if it's a valid UPC (according to the [upcitemdb](http://www.upcitemdb.com/) API). When ready to import the entire list of UPCs using the Quri API, simply click the Import UPCs button. After the API request, there will be a message displayed under the buttons whether the import was a success or not.
+Users are only able to add a UPC to the list if it's valid (according to the [upcitemdb](http://www.upcitemdb.com/) API). When ready to import the entire list of UPCs using the Quri API, simply click the Import UPCs button. After the API request, there will be a message displayed under the buttons whether the import was successful or not.
 
 ## Note
 If you do not have a paid [upcitemdb](http://www.upcitemdb.com/) plan, the API rate limit is 100 requests per day (per IP address).
